@@ -1,17 +1,16 @@
-# Taller-ASP.NET-Core
 Taller ASP.NET Core - Sistema de Gestión de Tareas
 Este repositorio contiene el proyecto desarrollado durante el webinar "Uso de ASP.NET Core" realizado en la Semana de Ingeniería 2025. Se implementa una aplicación web completa para la gestión de listas de tareas personalizadas utilizando el patrón Modelo-Vista-Controlador (MVC).
 
- Descripción del Proyecto
+Descripción del Proyecto
 El sistema permite a los usuarios registrarse, iniciar sesión y gestionar sus propias listas de tareas de manera personalizada. Cada usuario tiene acceso exclusivo a sus tareas, las cuales puede crear, visualizar, actualizar, eliminar y organizar según sus necesidades.
 Este proyecto fue desarrollado como parte de la asignación del taller de ASP.NET Core, demostrando la implementación práctica de conceptos clave del desarrollo web moderno con tecnologías .NET.
 
- Características Principales
+Características Principales
 
- Aplicación web construida con ASP.NET Core MVC
- Sistema de autenticación de usuarios (cada usuario accede a su cuenta personal)
- Gestión de listas de tareas personalizadas por usuario
- Funcionalidades CRUD completas:
+Aplicación web construida con ASP.NET Core MVC
+Sistema de autenticación de usuarios (cada usuario accede a su cuenta personal)
+Gestión de listas de tareas personalizadas por usuario
+Funcionalidades CRUD completas:
 
 Crear nuevas tareas
 Leer y visualizar todas las tareas
@@ -19,15 +18,15 @@ Actualizar tareas existentes
 Eliminar tareas completadas o no deseadas
 
 
- Filtrado y ordenamiento de tareas por prioridad
- Seguridad: Cada usuario solo puede ver y gestionar sus propias tareas
- Diseño responsivo adaptable a dispositivos móviles y escritorio
+Filtrado y ordenamiento de tareas por prioridad
+Seguridad: Cada usuario solo puede ver y gestionar sus propias tareas
+Diseño responsivo adaptable a dispositivos móviles y escritorio
 
 
- Tecnologías Utilizadas
+Tecnologías Utilizadas
 TecnologíaDescripciónASP.NET Core 7.0+Framework principal para el desarrollo webEntity Framework CoreORM para la gestión de base de datosSQL Server / SQLiteBase de datos para almacenamiento persistenteIdentity FrameworkSistema de autenticación y autorizaciónBootstrap 5Framework CSS para diseño responsivoRazor PagesMotor de vistas para las páginas webC#Lenguaje de programación del lado del servidor
 
- Requisitos Previos
+Requisitos Previos
 Antes de ejecutar el proyecto, asegúrate de tener instalado:
 
 .NET SDK 7.0 o superior
@@ -36,16 +35,16 @@ SQL Server (o SQL Server Express) / SQLite
 Git para clonar el repositorio
 
 
- Instrucciones para Ejecutar el Proyecto
- Clonar el Repositorio
+Instrucciones para Ejecutar el Proyecto
+1. Clonar el Repositorio
 bashgit clone https://github.com/Emanuel-Izaguirre-Cortes-03/Taller-ASP.NET-Core.git
 cd Taller-ASP.NET-Core
- Abrir el Proyecto
+2. Abrir el Proyecto
 
 Opción A: Abre la solución (.sln) en Visual Studio 2022
 Opción B: Abre la carpeta del proyecto en Visual Studio Code
 
- Configurar la Base de Datos
+3. Configurar la Base de Datos
 a) Configurar la cadena de conexión
 Edita el archivo appsettings.json y actualiza la cadena de conexión según tu entorno:
 json{
@@ -63,16 +62,17 @@ bashdotnet ef migrations add InitialCreate
 dotnet ef database update
 Nota: Si no tienes dotnet-ef instalado, ejecuta primero:
 bashdotnet tool install --global dotnet-ef
- Ejecutar la Aplicación
+4. Ejecutar la Aplicación
 bashdotnet run
 O presiona F5 en Visual Studio para ejecutar en modo debug.
- Acceder a la Aplicación
+5. Acceder a la Aplicación
 Abre tu navegador y visita:
 
 HTTP: http://localhost:5000
 HTTPS: https://localhost:5001
 
- Estructura del Proyecto
+
+Estructura del Proyecto
 Taller-ASP.NET-Core/
 │
 ├── Controllers/           # Controladores MVC (lógica de negocio)
@@ -103,7 +103,7 @@ Taller-ASP.NET-Core/
 ├── Program.cs            # Punto de entrada de la aplicación
 └── README.md             # Este archivo
 
-👤 Credenciales de Prueba
+Credenciales de Prueba
 Para facilitar la evaluación del proyecto, puedes usar las siguientes credenciales:
 Usuario de demostración:
 
@@ -112,7 +112,7 @@ Contraseña: Demo123!
 
 O registra tu propio usuario en la página de registro.
 
- Funcionalidades Implementadas
+Funcionalidades Implementadas
 1. Sistema de Autenticación
 
 Registro de nuevos usuarios
@@ -135,9 +135,7 @@ Marcado de tareas como completadas
 Interfaz intuitiva y fácil de usar
 
 
- Capturas de Pantalla
- <img width="1919" height="1079" alt="Captura de pantalla 2025-11-29 211055" src="https://github.com/user-attachments/assets/5604306b-2376-4b1d-8379-798b5accfd95" />
-
+Capturas de Pantalla
 Página de Inicio
 Vista principal de la aplicación con las tareas del usuario
 Formulario de Creación
@@ -145,24 +143,24 @@ Interfaz para agregar nuevas tareas
 Sistema de Filtros
 Opciones para organizar y filtrar tareas
 
-🎓 Contexto Académico
+Contexto Académico
 Materia: Desarrollo de Aplicaciones Web
 Evento: Webinar "Uso de ASP.NET Core" - Semana de Ingeniería 2025
 Institución: [Tu institución educativa]
 Estudiante: Emanuel Izaguirre Cortés
 
- Criterios de Evaluación Cumplidos
+Criterios de Evaluación Cumplidos
 
- Aplicación web funcional con ASP.NET Core y patrón MVC
- Sistema de autenticación de usuarios implementado
- Cada usuario tiene su lista de tareas personalizada
- Funcionalidades CRUD completas (Crear, Leer, Actualizar, Eliminar)
- Filtrado por prioridad y ordenamiento
- Proyecto completo subido a repositorio público en GitHub
- README con descripción detallada del proyecto
+Aplicación web funcional con ASP.NET Core y patrón MVC
+Sistema de autenticación de usuarios implementado
+Cada usuario tiene su lista de tareas personalizada
+Funcionalidades CRUD completas (Crear, Leer, Actualizar, Eliminar)
+Filtrado por prioridad y ordenamiento
+Proyecto completo subido a repositorio público en GitHub
+README con descripción detallada del proyecto
 
 
- Contribuciones
+Contribuciones
 Este proyecto fue desarrollado con fines académicos. Si deseas hacer sugerencias o mejoras:
 
 Haz un Fork del proyecto
@@ -172,14 +170,14 @@ Push a la rama (git push origin feature/MejoraNueva)
 Abre un Pull Request
 
 
- Contacto
+Contacto
 Emanuel Izaguirre Cortés
 GitHub: @Emanuel-Izaguirre-Cortes-03
 
- Licencia
+Licencia
 Este proyecto se distribuye bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
 
- Agradecimientos
+Agradecimientos
 
 Gracias a los instructores del webinar "Uso de ASP.NET Core"
 A la comunidad de .NET y ASP.NET Core por la documentación y recursos
